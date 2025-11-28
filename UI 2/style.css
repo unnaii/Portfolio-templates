@@ -1,0 +1,125 @@
+html {
+    background-image: url(fotos/back.jpg);
+    background-size: 300px;
+    height: 100vh;
+}
+
+header {
+    margin-top: 60px;
+    margin-left: 60px;
+    text-align: start;
+}
+
+#title {
+    width: 400px;
+}
+
+#bic {
+    position: absolute;
+    transform:translateX(1000px) translateY(-100px);
+}
+
+#sharp {
+    position: absolute;
+    width: 100px;
+    transform: rotate(30deg) translateX(700px) translateY(-300px);
+}
+
+#pencil {
+    position: absolute;
+    width: 750px;
+    transform: rotate(10deg) translateX(800px);
+}
+
+#milan {
+    position: absolute;
+    width: 230px;
+    transform: translateX(800px) translateY(400px);
+}
+
+
+main {
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.link {
+    width: 200px;
+}
+
+#recentprojects {
+    margin-top: -5px;
+    width: 330px;
+}
+
+#social {
+    margin-top: -5px;
+    width: 120px;
+}
+
+#verde {
+    position: absolute;
+    display: block;
+    width: 350px;
+    opacity: 0%;
+    transform: translateX(-60px) translateY(-5px);
+}
+
+#verde:hover {
+    position: absolute;
+    display: block;
+    width: 350px;
+    opacity: 50%;
+    transform: translateX(-60px) translateY(-5px);
+}
+
+#azul {
+    position: absolute;
+    display: block;
+    width: 350px;
+    opacity: 00%;
+    transform: translateX(-60px) translateY(-15px);    
+}
+
+#azul:hover {
+    position: absolute;
+    display: block;
+    width: 350px;
+    opacity: 50%;
+    transform: translateX(-60px) translateY(-15px);    
+}
+
+#morado {
+    position: absolute;
+    display: block;
+    width: 500px;
+    opacity: 00%;
+    transform: translateX(-60px) translateY(-30px);
+}
+
+#morado:hover {
+    position: absolute;
+    display: block;
+    width: 500px;
+    opacity: 50%;
+    transform: translateX(-60px) translateY(-30px);
+}
+
+#rosa {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    opacity: 0%;
+    transform: translateX(-35px) translateY(-35px);
+}
+
+#rosa:hover {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    opacity: 40%;
+    transform: translateX(-35px) translateY(-35px);
+}

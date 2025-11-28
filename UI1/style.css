@@ -1,0 +1,122 @@
+html {
+    height: 200vh;
+    background: #ffffff;
+    background: radial-gradient(circle at 50% 180%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 5%, rgba(87, 107, 199, 0.719) 54%, rgba(0,157,255,1) 67%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+img {
+    margin-top: -100px;
+    margin-left: -50px;
+}
+
+
+nav {
+    margin-top: 250px;
+    text-align: center;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navigator {
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    transition: all 0.2s;
+    animation: appear linear;
+    animation-timeline: view();
+}
+
+.navigator:hover {
+    transition: all 0.2s;
+    transform: rotate(5deg);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+}
+
+input {
+    margin-right: 60px;
+}
+
+/* Contenedor del botón de tema */
+.theme-container {
+  position: relative;
+  margin-right: 60px;
+}
+
+#theme {
+  display: none;
+}
+
+.theme-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    right: -25px;
+    transition: opacity 0.3s ease;
+}
+
+/* Sol visible por defecto */
+.sun {
+  opacity: 1;
+}
+
+/* Luna oculta por defecto */
+.moon {
+  opacity: 0;
+}
+
+/* Cuando el tema es oscuro, invertimos */
+html.dark .sun {
+  opacity: 0;
+}
+
+html.dark .moon {
+  opacity: 1;
+}
+
+/* Fondos claro y oscuro */
+html {
+  height: 200vh;
+  background: radial-gradient(
+    circle at 50% 180%,
+    rgb(255, 255, 255) 35%,
+    rgb(255, 255, 255) 5%,
+    rgba(87, 107, 199, 0.719) 54%,
+    rgba(0,157,255,1) 67%,
+    rgba(255,255,255,1) 80%,
+    rgba(255,255,255,1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background 1.5s ease;
+}
+
+
+
+/* Estado oscuro */
+html.dark {
+    height: 200vh;
+    background: #000000;
+    background: radial-gradient(circle at 50% 180%, rgb(34, 34, 34) 35%, rgba(10, 0, 56, 0.952) 44%, rgba(62, 12, 104, 0.795) 67%, rgb(50, 66, 110) 80%, rgb(58, 58, 58) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
